@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.focusAfterRun": "none",
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true
+}

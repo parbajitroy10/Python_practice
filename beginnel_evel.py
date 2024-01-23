@@ -218,9 +218,9 @@
 #     print("You can ride the rollercoaster!")
 #     age = int(input("What is your age?"))
 #     if age <= 18:
-#       print("Please pay Tk 50.")
+#       print("Please pay 50 Tk.")
 #     else:
-#       print("Please pay Tk 80.")
+#       print("Please pay 80 Tk.")
 # else:
 #     print("Sorry, you have to grow taller before you can ride.")
 
@@ -233,18 +233,20 @@
 #     age = int(input("What is your age?"))
 #     if age < 12:
 #       bill = 30  
-#       print("Child tickets are Tk 30.")
+#       print("Child tickets are 30 Tk.")
 #     elif age <= 18:
 #       bill = 50  
-#       print("Youth tickets are Tk 50.")
+#       print("Youth tickets are 50 Tk.")
+#     elif age >= 45 and age <= 55: 
+#       print("Everything is going to be ok. Have a free ride on us!.")    
 #     else:
 #       bill = 80  
-#       print("Adult tickets are Tk 80.")
+#       print("Adult tickets are 80 Tk.")
     
 #     wants_photo = input("Do you want a photo taken? Y or N.")
 #     if wants_photo == "Y":
 #       bill += 3
-#     print(f"Your total bill is {bill}")  
+#     print(f"Your total bill is {bill} TK.")  
 # else:
 #     print("Sorry, you have to grow taller before you can ride.")
 
@@ -300,3 +302,67 @@
     
 # print(f"Your final bill is {bill}Tk")
 
+# 8th project (Love Calculator) :
+print ("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+combined_strings = name1 + name2
+lower_case_strings = combined_strings.lower()
+t = lower_case_strings.count("t")
+r = lower_case_strings.count("r")
+u = lower_case_strings.count("u")
+e = lower_case_strings.count("e")
+true = t + r + u + e
+
+l = lower_case_strings.count("l")
+o = lower_case_strings.count("o")
+v = lower_case_strings.count("v")
+e = lower_case_strings.count("e")
+love = l + o + v + e
+
+love_score = int(str(true) + str(love))
+
+if love_score < 10 or love_score > 90 :
+    print(f"Your score is {love_score}, you go together like coke and mentos.")
+elif love_score >= 40 and love_score <= 50 :
+    print(f"Your score is {love_score}, you are alright together.")
+else:
+    print(f"Your score is {love_score}")
+
+
+
+
+
+
+
+
+# print ('''
+# *******************************************************************************
+#  _________|________________.=""_;=.______________|_____________________|_______
+#                     |  ,-"_,=""     `"=.|                  |
+#  ___________________|__"=._o`"-._        `"=.______________|___________________
+#           |                `"=._o`"=._      _`"=._                     |
+#  _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+#                     |    __.--" , ; `"=._o." ,-"""-._ ".   |
+#  ___________________|_._"  $@!oo @!&$ ,  `"-._"-._   ". '__|___________________
+#           |           |o`"=._`!()oo @!()@  ,  "-._"-._; ;              |
+#  _________|___________| ;`-.o`"=._.&$@.& ()$%-'o. "-._ /_______________|_______
+#                     | |o;    `"-.o`"=._!@%()@'% ,__.--o;   |
+#  ___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+# ____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+# /______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+# ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+# /______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+# ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+# /______/______/______/______/______/______/______/______/______/______/[TomekK]
+# *******************************************************************************
+# ''')
+# print("Wlcome to Treasure Island!")
+# print("Your mission is to find the treasure!")
+# choice1 = input('You\'re at a crossroad, where do you want to go? Type "left" or "right".').lower()
+
+# if choice1 == "left":
+#     input('You\'ve come to a lake. There is an island in the niddle of the lake . Type "wait" to wait for a boat. Type "swim" to swim across.')
+# else:
+#     print("You fell into a hole. Game Over!")    

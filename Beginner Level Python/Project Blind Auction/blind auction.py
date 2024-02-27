@@ -23,4 +23,7 @@ while not bidding_finished:
         bidding_finished = True
         find_highest_bidder(bids)
     elif should_continue == "yes":
-        clear()                                          ## not full-fill cz the clear function...
+        bidding_finished = False
+
+
+

@@ -755,8 +755,8 @@
 #     if f_name == "" or l_name == "":                                                                     
 #         return "You didn't provide valid input."                #___________________________________________       
 #     formatted_f_name = f_name.title()                                                                   #   \        
-#     formatted_l_name = l_name.title()                                                                  #     ------------------  This is called the multiple return values !            
-#     return f"Result: {formatted_f_name}{formatted_l_name}"       #__________________________________________/  
+#     formatted_l_name = l_name.title()        # (title function do the first word turn into capital word)  #  ------------------  This is called the multiple return values !            
+#     return f"Result: {formatted_f_name} {formatted_l_name}"       #__________________________________________/  
 
 # print(formatted_name(input("What is your first name?"),input("What is your last name?")))
 
@@ -776,7 +776,7 @@
 #     else:
 #         return False
 
-# def days_in_month():
+# def days_in_month(year, month):
 #     month_days = [31,28,31,30,31,30,31,31,30,31,30,31]  
 #     if is_leap(year) and month == 2:
 #         return 29

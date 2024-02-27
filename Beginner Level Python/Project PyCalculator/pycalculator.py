@@ -1,4 +1,4 @@
-from pycalculator_art import logo
+from pycalculator_art import logo as lg
 def add(n1, n2):
     return n1 + n2    
 
@@ -19,7 +19,7 @@ operations = {
 }
 
 def calculator():                          #it's called recursion...
-    print(logo)
+    print(lg)
     num1 = float(input("What's the first number?: "))
     for symbol in operations:
         print(symbol)

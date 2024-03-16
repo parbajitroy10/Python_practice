@@ -786,3 +786,59 @@
 # month = int(input("Enter a month: "))
 # days = days_in_month(year, month)
 # print(days)
+
+
+
+# Scope :
+
+# enemies = 1 
+# def increase_enemies():
+#     enemies = 2 
+#     print(f" enemies inside function {enemies}")
+
+# increase_enemies()
+# print(f"enemies outside function {enemies}")
+
+# # # Local Scope :
+
+# def drink_potion():
+#     poition_strength = 2
+#     print(poition_strength)
+
+# drink_potion()
+# print(poition_strenth)        # when want to print outside the function, gives error. 
+
+# # Global Scope :
+# player_health = 10
+
+# def drink_potion():
+#     poition_strength = 2
+#     print(poition_strength)
+
+# drink_potion()
+# print(player_health)    
+
+# player_health = 10
+#if nested this function:
+# player_health = 10
+
+# def game():
+#     def drink_potion():
+#         poition_strength = 2
+#         print(poition_strength)
+
+#     drink_potion()
+# game()
+# print(player_health)    
+
+
+
+# There is no block scope:
+
+game_level = 3
+
+enemies = ["Skeleton", "Zombie", "Alien"]
+if game_level < 5:
+    new_enemy = enemies[0]
+
+print(new_enemy)

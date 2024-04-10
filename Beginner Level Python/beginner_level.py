@@ -792,6 +792,7 @@
 # Scope :
 
 # enemies = 1 
+
 # def increase_enemies():
 #     enemies = 2 
 #     print(f" enemies inside function {enemies}")
@@ -819,7 +820,9 @@
 # print(player_health)    
 
 # player_health = 10
+
 #if nested this function:
+
 # player_health = 10
 
 # def game():
@@ -833,12 +836,87 @@
 
 
 
-# There is no block scope:
+# There is no block scope:              there are no function,that's why we can call there is no block scope!
 
-game_level = 3
+# game_level = 3
 
-enemies = ["Skeleton", "Zombie", "Alien"]
-if game_level < 5:
-    new_enemy = enemies[0]
+# enemies = ["Skeleton", "Zombie", "Alien"]
+# if game_level < 5:
+#     new_enemy = enemies[0]
 
-print(new_enemy)
+# print(new_enemy)
+
+
+
+# Modifying Global Scope :
+
+# enemies = 1
+# def increase_enemies():
+#     print(f"enemies inside function: {enemies}")
+#     return enemies + 1
+
+# enemies = increase_enemies()
+# print(f"enemies outside function: {enemies}")
+
+
+
+# Global Constant :     used to modify a global variable in a local context! 
+
+# PI = 3.14159
+# URL = "https://www.google.com"
+# TWITTER_HANDLE = "@ROY_PORBO"
+
+# def calc():
+#     PI
+
+
+
+############DEBUGGING#####################
+
+# # Describe Problem
+# def my_function():
+#   for i in range(1, 20):      #   for i in range(1, 21): 
+#     if i == 20:               #   if i == 20:
+#       print("You got it")
+# my_function()
+
+# # Reproduce the Bug
+# from random import randint
+# dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
+# dice_num = randint(1, 6)                              # dice_num = randint(0, 5)                
+# print(dice_imgs[dice_num])
+
+# # Play Computer
+# year = int(input("What's your year of birth?"))
+# if year > 1980 and year < 1994:
+#   print("You are a millenial.")                      
+# elif year > 1994:                                     # elif year >= 1994:  
+#   print("You are a Gen Z.")
+
+# # Fix the Errors
+# age = input("How old are you?")                       # age = int(input("How old are you?"))
+# if age > 18:                                      
+# print("You can drive at age {age}.")                  # print(f"You can drive at age {age}.")                
+
+# #Print is Your Friend
+# pages = 0
+# word_per_page = 0
+# pages = int(input("Number of pages: "))
+# word_per_page == int(input("Number of words per page: "))            # word_per_page = int(input("Number of words per page: "))  
+# total_words = pages * word_per_page                                                      
+                                                                       # print(f"pages = {pages}") 
+                                                                       # print(f"word_per_page = {word_per_page}")
+                                                                       
+# print(total_words)
+
+# #Use a Debugger
+# def mutate(a_list):
+#   b_list = []
+#   for item in a_list:
+#     new_item = item * 2
+#   b_list.append(new_item)             #just indent this line solveddd.....!
+#   print(b_list)
+
+# mutate([1,2,3,5,8,13])
+
+
